@@ -2,7 +2,7 @@
 
 This repository contains MATLAB codes for estimating Multivariate Transfer Entropy (MTE) using Coupled Hidden Markov Models (CHMMs), specifically Latent Structure Influence Models (LSIMs). The implementation is based on research published in the IEEE ICBME 2022 conference.
 
-## 📋 Abstract
+## Abstract
 
 Studying complex dynamical systems such as the brain requires identifying causal relationships from brain signals like EEG. In such systems, causal inference is challenging since datasets are often high-dimensional, nonlinear, noisy, and often with small sample sizes. Using multivariate transfer entropy (MTE), causal relationships can be inferred in linear and nonlinear ways.
 
@@ -12,7 +12,7 @@ Simulated datasets from neural mass models (NMMs) are used to compare the propos
 
 **Key Finding**: Based on the AUCPR criterion, the proposed MTE estimator for NMMs is more effective than the standard kNN method. The proposed LSIM-based method outperforms the existing kNN method by about 3.7% in AUCPR values for SNRs in the range of 0 dB to 5 dB.
 
-## 📚 Citation
+## Citation
 
 ```bibtex
 @inproceedings{karimi2022coupled,
@@ -25,7 +25,7 @@ Simulated datasets from neural mass models (NMMs) are used to compare the propos
 }
 ```
 
-## 🏗️ Repository Structure
+## Repository Structure
 
 ```
 mte-estimation/
@@ -41,7 +41,7 @@ mte-estimation/
 └── HERMES Toolbox/                 # HERMES connectivity toolbox
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -136,7 +136,7 @@ The proposed LSIM-based MTE estimator shows superior performance compared to the
 
 *Comparison of PR curves in 10-channel NMM simulations at SNR=0dB and T=500*
 
-## 🔬 Methodology
+## Methodology
 
 ### Neural Mass Models (NMMs)
 - Simulated EEG-like signals using coupled neural mass models
@@ -154,14 +154,14 @@ The proposed LSIM-based MTE estimator shows superior performance compared to the
 - **SNR Levels**: -10 to 20 dB (7 levels)
 - **Evaluation Metrics**: AUCPR, AUROC, Precision, Recall
 
-## 📈 Key Contributions
+## Key Contributions
 
 1. **Novel MTE Estimator**: First application of LSIMs for transfer entropy estimation
 2. **Robust Performance**: Superior results under noisy conditions
 3. **Scalable Framework**: Works across different network sizes and data lengths
 4. **Comprehensive Evaluation**: Thorough comparison with state-of-the-art methods
 
-## 🔧 Configuration
+## Configuration
 
 ### Main Parameters (in `main_nms_connectivity.m`)
 
@@ -179,7 +179,7 @@ n_lags_lsim = 1;             % LSIM lag parameter
 fs = 100;                    % Sampling frequency
 ```
 
-## 📝 Dependencies
+## Dependencies
 
 ### CHMM-LSIM Toolbox
 - **Source**: [GitHub Repository](https://github.com/sajjadkarimi91/chmm-lsim-matlab-toolbox)
@@ -191,7 +191,7 @@ fs = 100;                    % Sampling frequency
 - **Reference**: Niso, G., et al. (2013). HERMES: towards an integrated toolbox to characterize functional and effective brain connectivity. Neuroinformatics, 11(4), 405-434.
 - **Purpose**: Provides kNN-based transfer entropy estimation for comparison
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -219,28 +219,11 @@ fs = 100;                    % Sampling frequency
    - Try: `mex -setup C` in MATLAB
    - For macOS: Install Xcode Command Line Tools
 
-## 🤝 Contributing
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
-
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 👥 Authors
-
-- **Sajjad Karimi** - Initial work
-- **M.B. Shamsollahi** - Supervision and guidance
-
-## 🙏 Acknowledgments
-
-- Neural mass model implementation based on established literature
-- HERMES toolbox for comparison methods
-- MATLAB community for computational tools
 
 ---
 
