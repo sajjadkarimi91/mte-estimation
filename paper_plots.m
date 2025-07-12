@@ -7,7 +7,7 @@ close all
 % db_vals = -10:5:20;
 
 
-load('results_fast2.mat')
+load('nms_mte_results.mat')
 
 save_path = './figs';
 
